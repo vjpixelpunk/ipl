@@ -1,0 +1,17 @@
+spring:
+  datasource:
+    url: jdbc:postgresql://localhost:5432/postgres
+    password: 74448
+    username: postgres
+
+    jpa:
+      properties:
+        format_sql: true
+      hibernate:
+        ddl-auto: update
+      show-sql: true
+
+    server:
+      servlet:
+        context-path: /app-currency
+      port: 8083
